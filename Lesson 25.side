@@ -1,0 +1,425 @@
+{
+  "id": "6ba8f39f-c458-401d-8797-7a37a88b0469",
+  "version": "2.0",
+  "name": "Lesson 25",
+  "url": "https://makeup.com.ua/ua/",
+  "tests": [{
+    "id": "1483882d-1fad-4276-a911-ec7b1a1d633a",
+    "name": "Click on logo",
+    "commands": [{
+      "id": "33bf3a1f-5635-4160-8c02-c3b2be0ef168",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af034aa4-6261-464c-9538-b44a173137b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active .simple-slider-list__name",
+      "targets": [
+        ["linkText=Calvin Klein CK One", "linkText"],
+        ["css=.active .simple-slider-list__name", "css:finder"],
+        ["xpath=//a[contains(text(),'Calvin Klein CK One')]", "xpath:link"],
+        ["xpath=//div[@id='slider-id-f7964610-e822-423b-8aea-2f9e3a7e02a6']/div/ul/li[3]/div[2]/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ua/product/13362/')])[2]", "xpath:href"],
+        ["xpath=//li[3]/div[2]/div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56e73ee1-1874-42e2-b032-c0dceba33422",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logo",
+      "targets": [
+        ["css=.logo", "css:finder"],
+        ["xpath=(//a[contains(@href, '/ua/')])[119]", "xpath:href"],
+        ["xpath=//header/div[2]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c78f52ba-7db3-46a5-a518-7e2b1de54dc2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(text(),'Акції')]",
+      "targets": [
+        ["linkText=Акції", "linkText"],
+        ["css=.promoted > .header-top-list__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Акції')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/ua/actions/')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Акції')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a6f50df-a2f3-4ed0-88e4-6bb3f97092f1",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Акції",
+      "targets": [
+        ["linkText=Акції", "linkText"],
+        ["css=.promoted > .header-top-list__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Акції')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/ua/actions/')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Акції')]", "xpath:innerText"]
+      ],
+      "value": "Акції"
+    }]
+  }, {
+    "id": "247f7be3-c01f-4064-8bca-e7d2d8c8e768",
+    "name": "Search for a product through the search field",
+    "commands": [{
+      "id": "3cda270e-01e8-409c-a848-7fe640813c16",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2ca6310-7b34-450c-97a6-d5813b337081",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-button:nth-child(5)",
+      "targets": [
+        ["css=.search-button:nth-child(5)", "css:finder"],
+        ["xpath=//header/div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "757e5cdb-b152-44cc-93eb-4b7e176be27c",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='search-input']",
+      "targets": [
+        ["id=search-input", "id"],
+        ["name=q", "name"],
+        ["css=#search-input", "css:finder"],
+        ["xpath=//input[@id='search-input']", "xpath:attributes"],
+        ["xpath=//div[@id='search-modal-container']/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "Парфуми"
+    }, {
+      "id": "85a5e862-58cc-4680-a96b-4d72031b3765",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-button:nth-child(1)",
+      "targets": [
+        ["css=.search-button:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='search-modal-container']/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c50d420-404e-41c3-8bab-2fe6fb75d941",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.slider > .page-header",
+      "targets": [
+        ["css=.slider > .page-header", "css:finder"],
+        ["xpath=//div/div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb57dab7-816f-44d6-814f-2b5ec6bd3e54",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.slider > .page-header",
+      "targets": [],
+      "value": "Пропозиції брендів"
+    }, {
+      "id": "8d99381c-742e-4ae4-a1e9-0ee2d8c1d51a",
+      "comment": "",
+      "command": "open",
+      "target": "ua/product/1141433/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f4300f16-577d-4727-82ef-6e63fa2f9d0d",
+    "name": "Add a product to the cart through categories",
+    "commands": [{
+      "id": "a456d38e-159e-4512-b8c0-3b3f0fa82974",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "981e4b08-e6a2-4608-bd4d-6d97ab49e5c2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Парфумерія')]",
+      "targets": [
+        ["linkText=Парфумерія", "linkText"],
+        ["css=.menu-list__item:nth-child(3) > .menu-list__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Парфумерія')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/ua/categorys/3/')]", "xpath:href"],
+        ["xpath=//nav/div[2]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02bc64a7-db08-4693-84a6-37ccc0d71f15",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[@id='popularinput-checkbox-2243-30649']/a",
+      "targets": [
+        ["linkText=Dolce & Gabbana (99)", "linkText"],
+        ["css=#popularinput-checkbox-2243-30649 > a", "css:finder"],
+        ["xpath=//li[@id='popularinput-checkbox-2243-30649']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ua/brand/30649/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dolce & Gabbana (99)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2224c55d-f109-495d-9be8-92a1ace037ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=#input-checkbox-2259-22435 > span",
+      "targets": [
+        ["css=#input-checkbox-2259-22435 > span", "css:finder"],
+        ["xpath=//li[@id='input-checkbox-2259-22435']/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/ul/li/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Для жінок (55)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40e9b25a-d9c4-4991-bdc9-d58768317a85",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active .simple-slider-list__image",
+      "targets": [
+        ["css=.active .simple-slider-list__image", "css:finder"],
+        ["xpath=//a[contains(@href, '/ua/product/798409/')]", "xpath:href"],
+        ["xpath=//div[5]/ul/li[13]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0137fe5f-1489-477d-beb1-90e3e5fdbfa3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.similar-product > .page-header",
+      "targets": [
+        ["css=.similar-product > .page-header", "css:finder"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a12e1002-2221-4565-93cf-57ca610e5716",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.similar-product > .page-header",
+      "targets": [],
+      "value": "Схожі товари"
+    }, {
+      "id": "979f1ca8-9fd3-412c-ba5a-a2b1b70fed30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.buy",
+      "targets": [
+        ["css=.buy", "css:finder"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ab2c5624-7e47-4c10-a6a5-cba31f9f9a3a",
+    "name": "Add a  product (two count) to the cart through categories ",
+    "commands": [{
+      "id": "9ab89fe6-d4b3-488a-82b1-b6549ff7c412",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ada0cf8-bc5f-4b45-90d5-a3d0c16491ba",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Парфумерія')]",
+      "targets": [
+        ["linkText=Парфумерія", "linkText"],
+        ["css=.menu-list__item:nth-child(3) > .menu-list__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Парфумерія')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/ua/categorys/3/')]", "xpath:href"],
+        ["xpath=//nav/div[2]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e4b2c37-9aa7-41a6-8e1b-62bc3e666998",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[@id='popularinput-checkbox-2243-30649']/a",
+      "targets": [
+        ["linkText=Dolce & Gabbana (99)", "linkText"],
+        ["css=#popularinput-checkbox-2243-30649 > a", "css:finder"],
+        ["xpath=//li[@id='popularinput-checkbox-2243-30649']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ua/brand/30649/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dolce & Gabbana (99)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4d10a3c-8692-42a0-aea4-8995576c6050",
+      "comment": "",
+      "command": "click",
+      "target": "css=#input-checkbox-2259-22435 > span",
+      "targets": [
+        ["css=#input-checkbox-2259-22435 > span", "css:finder"],
+        ["xpath=//li[@id='input-checkbox-2259-22435']/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/ul/li/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Для жінок (55)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d37078eb-7483-4e67-866f-dac880ff1589",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(@href, '/ua/product/798409/')])[2]",
+      "targets": [
+        ["linkText=Dolce&Gabbana The Only One Intense", "linkText"],
+        ["css=.active .simple-slider-list__name", "css:finder"],
+        ["xpath=//a[contains(text(),'Dolce&Gabbana The Only One Intense')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/ua/product/798409/')])[2]", "xpath:href"],
+        ["xpath=//li[14]/div[2]/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dolce&Gabbana The Only One Intense')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f12525cf-690b-4e93-8c6d-d69e93cdec5c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.product-item__volume-radio",
+      "targets": [
+        ["css=.product-item__volume-radio", "css:finder"],
+        ["xpath=//div[2]/div[3]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bcb18b2-5f60-44a3-b8e3-d2080d6dd18f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.local",
+      "targets": [
+        ["css=.local", "css:finder"],
+        ["xpath=//div[@id='product_enabled']/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Є в наявності!')]", "xpath:innerText"]
+      ],
+      "value": "Є в наявності!"
+    }, {
+      "id": "15f87bd9-8da2-4eb2-9ca6-07067080a8ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.buy",
+      "targets": [
+        ["css=.buy", "css:finder"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30fa6119-3a2b-4001-a9f1-5eaa9f982171",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.product__button-increase",
+      "targets": [
+        ["css=.product__button-increase", "css:finder"],
+        ["xpath=//div[2]/div/ul/li/div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a7c0609-37c9-47f1-ac21-a40662796610",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "83e3f9fc-9c4d-4766-b480-8cdf1e392577",
+    "name": "Checking the clickability of a banner",
+    "commands": [{
+      "id": "d5e1cb4e-dae6-4d49-bc5a-ccbde2f9d90f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83988a47-062c-455c-8892-c4168c7c9bf4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='slider']/ul/li[8]/div/a/picture",
+      "targets": [
+        ["css=.active picture", "css:finder"],
+        ["xpath=//div[@id='slider']/ul/li[8]/div/a/picture", "xpath:idRelative"],
+        ["xpath=//li[8]/div/a/picture", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6349186a-2c58-45c1-abe6-19070ed04893",
+      "comment": "",
+      "command": "open",
+      "target": "https://makeup.com.ua/ua/product/737965/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38eb222f-3ad3-423c-949f-6cb262965104",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.product-item__button > .button",
+      "targets": [
+        ["css=.product-item__button > .button", "css:finder"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "544b1623-f5dc-4374-a3ae-9802e37f4509",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=.product-item__button > .button",
+      "targets": [
+        ["css=.product-item__button > .button", "css:finder"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": "В кошик"
+    }, {
+      "id": "e94b1f33-ade5-4bba-b327-5657f81b78fe",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[3]/div[2]/div",
+      "targets": [
+        ["css=.buy", "css:finder"],
+        ["xpath=//div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4446227d-2f67-46d4-8698-53990b703477",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=(//a[contains(text(),'Мішечок із косметичними дисками у подарунок, за умови придбання двох акційних товарів Lancaster')])[3]",
+      "targets": [
+        ["css=.product__cart-promotion > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Мішечок із косметичними дисками у подарунок, за умови придбання двох акційних товарів Lancaster')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/ua/news/65160/')])[3]", "xpath:href"],
+        ["xpath=//li/div[2]/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "95d8bcbf-90b2-4ed6-a992-f22f99b94361",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1483882d-1fad-4276-a911-ec7b1a1d633a"]
+  }],
+  "urls": ["https://makeup.com.ua/ua/"],
+  "plugins": []
+}
